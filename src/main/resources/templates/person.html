@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8"/>
+
+    <title>Title</title>
+</head>
+<body>
+<ul class="list-group">
+    <li class="list-group-item" th:each="p:${people}">
+        <span th:text="${p.firstName}+' '+${p.lastName}"></span>
+        <span class="badge" th:text="${p.id}">10</span>
+    </li>
+</ul>
+</body>
+</html>
